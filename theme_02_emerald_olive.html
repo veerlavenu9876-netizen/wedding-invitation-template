@@ -1,0 +1,2138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Amelia & Ethan — Collection 02: Emerald & Tuscan Olive</title>
+  <meta name="description" content="You are joyfully invited to celebrate the marriage of Amelia and Ethan in Florence, Italy on May 27.">
+  
+  <!-- Reusable Client Configuration (Decoupled from Google Account / Couple) -->
+  <script src="wedding-config.js"></script>
+
+  <!-- Premium Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Great+Vibes&family=Montserrat:wght@200;300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Cinzel:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    /* =========================================================================
+       LUXURY DESIGN SYSTEM THEMES (CSS VARIABLES)
+       ========================================================================= */
+    :root {
+      /* Default Theme: 01. Romantic Blush & Champagne */
+      --color-bg-paper: #FAF6F0;
+      --color-card-surface: #FFFDF8;
+      --color-deep-accent: #324A3A;
+      --color-primary-text: #2C2627;
+      --color-muted-text: #7A6F72;
+      --color-romantic-accent: #C8848E;
+      --color-rose-deep: #8E4A56;
+      --color-metallic-gold: #C8A76C;
+      --color-metallic-light: #E8D8B6;
+      --color-subtle-border: rgba(200, 167, 108, 0.35);
+      --color-input-bg: #FFFFFF;
+      --color-bezel-shadow: rgba(0, 0, 0, 0.75);
+
+      --font-serif-fashion: 'Playfair Display', 'Cormorant Garamond', Georgia, serif;
+      --font-serif-editorial: 'Cormorant Garamond', Georgia, serif;
+      --font-script-calligraphy: 'Great Vibes', cursive;
+      --font-sans-clean: 'Montserrat', -apple-system, sans-serif;
+      --font-display-classic: 'Cinzel', serif;
+
+      --shadow-card: 0 20px 45px rgba(44, 38, 39, 0.08);
+      --shadow-elevated: 0 25px 60px rgba(44, 38, 39, 0.12);
+    }
+
+    /* THEME 02: EMERALD & TUSCAN OLIVE */
+    body[data-theme="emerald"] {
+      --color-bg-paper: #F6F7F2;
+      --color-card-surface: #FCFDF9;
+      --color-deep-accent: #1C3B2B;
+      --color-primary-text: #19261C;
+      --color-muted-text: #5D6E60;
+      --color-romantic-accent: #47664D;
+      --color-rose-deep: #204530;
+      --color-metallic-gold: #C8A76C;
+      --color-metallic-light: #E8D9B6;
+      --color-subtle-border: rgba(94, 113, 84, 0.35);
+      --color-input-bg: #FFFFFF;
+    }
+
+    /* THEME 03: MINIMALIST EDITORIAL (Vogue/Kinfolk) */
+    body[data-theme="editorial"] {
+      --color-bg-paper: #FBF9F6;
+      --color-card-surface: #FFFFFF;
+      --color-deep-accent: #141213;
+      --color-primary-text: #141213;
+      --color-muted-text: #6B6566;
+      --color-romantic-accent: #3A3537;
+      --color-rose-deep: #141213;
+      --color-metallic-gold: #B89B66;
+      --color-metallic-light: #E0D3BC;
+      --color-subtle-border: rgba(20, 18, 19, 0.18);
+      --color-input-bg: #FFFFFF;
+    }
+
+    /* Minimalist Editorial hides heavy watercolor florals for pure typography */
+    body[data-theme="editorial"] .hero-floral-wrapper {
+      display: none !important;
+    }
+    body[data-theme="editorial"] .date-bottom-florals {
+      display: none !important;
+    }
+    body[data-theme="editorial"] #hero-section {
+      padding-top: 80px;
+    }
+    body[data-theme="editorial"] #date-section {
+      padding-bottom: 60px;
+    }
+
+    /* THEME 04: MIDNIGHT CELESTIAL & ROYAL GOLD */
+    body[data-theme="midnight"] {
+      --color-bg-paper: #0B111D;
+      --color-card-surface: #131C2D;
+      --color-deep-accent: #E2C07A;
+      --color-primary-text: #F8FAFC;
+      --color-muted-text: #94A3B8;
+      --color-romantic-accent: #E2C07A;
+      --color-rose-deep: #F1D28C;
+      --color-metallic-gold: #E2C07A;
+      --color-metallic-light: #F6E6BF;
+      --color-subtle-border: rgba(226, 192, 122, 0.35);
+      --color-input-bg: rgba(19, 28, 45, 0.95);
+      --color-bezel-shadow: rgba(0, 0, 0, 0.95);
+    }
+
+    body[data-theme="midnight"] .viewport-stage {
+      background: radial-gradient(circle at 50% 15%, #182338 0%, #060911 100%);
+    }
+
+    body[data-theme="midnight"] .smartphone-bezel {
+      box-shadow: 
+        0 0 0 10px #111827,
+        0 0 0 12px #1E293B,
+        0 35px 85px rgba(0, 0, 0, 0.9),
+        0 0 45px rgba(226, 192, 122, 0.15);
+    }
+
+    body[data-theme="midnight"] .form-input,
+    body[data-theme="midnight"] .form-select,
+    body[data-theme="midnight"] .form-textarea {
+      background: rgba(11, 17, 29, 0.8);
+      color: #F8FAFC;
+      border-color: rgba(226, 192, 122, 0.35);
+    }
+
+    body[data-theme="midnight"] .form-input:focus,
+    body[data-theme="midnight"] .form-select:focus,
+    body[data-theme="midnight"] .form-textarea:focus {
+      border-color: #E2C07A;
+      background: rgba(11, 17, 29, 0.98);
+    }
+
+    body[data-theme="midnight"] .attendance-pill {
+      background: rgba(19, 28, 45, 0.8);
+      border-color: rgba(226, 192, 122, 0.35);
+      color: #94A3B8;
+    }
+
+    body[data-theme="midnight"] .attendance-option input:checked + .attendance-pill {
+      background: #E2C07A;
+      color: #0B111D;
+      border-color: #E2C07A;
+      font-weight: 600;
+    }
+
+    body[data-theme="midnight"] .btn-submit-rsvp {
+      background: linear-gradient(135deg, #E2C07A, #C8A76C);
+      color: #0B111D;
+      font-weight: 700;
+      box-shadow: 0 8px 24px rgba(226, 192, 122, 0.35);
+    }
+
+    body[data-theme="midnight"] .btn-directions {
+      background: #131C2D;
+      border-color: #E2C07A;
+      color: #E2C07A;
+    }
+
+    body[data-theme="midnight"] .btn-directions:hover {
+      background: #E2C07A;
+      color: #0B111D;
+    }
+
+    /* Floral Blending Engine */
+    body:not([data-theme="midnight"]) .hero-floral-wrapper,
+    body:not([data-theme="midnight"]) .date-bottom-florals {
+      mix-blend-mode: multiply;
+    }
+
+    body[data-theme="midnight"] .hero-floral-wrapper,
+    body[data-theme="midnight"] .date-bottom-florals {
+      mix-blend-mode: screen;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-color: #120E11;
+      color: var(--color-primary-text);
+      font-family: var(--font-serif-editorial);
+      overflow-x: hidden;
+      min-height: 100vh;
+      transition: background-color 0.4s ease, color 0.4s ease;
+    }
+
+    /* Outer Stage */
+    .viewport-stage {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      min-height: 100vh;
+      background: radial-gradient(circle at 50% 15%, #251B20 0%, #0E090C 100%);
+      padding: 40px 20px 80px;
+      position: relative;
+      transition: background 0.4s ease;
+    }
+
+    /* Floating Top Toolbar */
+    .floating-top-bar {
+      position: fixed;
+      top: 18px;
+      right: 20px;
+      z-index: 1000;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+
+    .pill-btn {
+      background: rgba(24, 18, 22, 0.9);
+      border: 1px solid rgba(200, 167, 108, 0.4);
+      color: var(--color-metallic-light);
+      padding: 8px 16px;
+      border-radius: 999px;
+      font-family: var(--font-sans-clean);
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
+      cursor: pointer;
+      backdrop-filter: blur(14px);
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+      text-decoration: none;
+    }
+
+    .pill-btn:hover {
+      background: rgba(200, 167, 108, 0.25);
+      border-color: var(--color-metallic-gold);
+      color: #FFF;
+      transform: translateY(-2px);
+    }
+
+    /* Theme Picker Dropdown */
+    .theme-picker-container {
+      position: relative;
+    }
+
+    .theme-dropdown {
+      display: none;
+      position: absolute;
+      top: calc(100% + 8px);
+      right: 0;
+      background: #1C151A;
+      border: 1px solid var(--color-subtle-border);
+      border-radius: 16px;
+      padding: 8px;
+      box-shadow: 0 16px 40px rgba(0, 0, 0, 0.7);
+      width: 240px;
+      z-index: 1050;
+      backdrop-filter: blur(20px);
+      animation: fadeIn 0.25s ease forwards;
+    }
+
+    .theme-dropdown.is-open {
+      display: block;
+    }
+
+    .theme-option-item {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 10px 12px;
+      border-radius: 10px;
+      color: #FAF6F0;
+      font-family: var(--font-sans-clean);
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.5px;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .theme-option-item:hover {
+      background: rgba(200, 167, 108, 0.15);
+      color: #FFF;
+    }
+
+    .theme-option-item.active {
+      background: rgba(200, 167, 108, 0.25);
+      border-left: 3px solid var(--color-metallic-gold);
+      font-weight: 600;
+    }
+
+    .theme-dot {
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      flex-shrink: 0;
+    }
+
+    /* Smartphone Device Mockup Bezel (Pure CSS Background) */
+    .smartphone-bezel {
+      width: 100%;
+      max-width: 440px;
+      min-height: 900px;
+      background-color: var(--color-bg-paper);
+      background-image: 
+        radial-gradient(ellipse at 50% 0%, rgba(200, 167, 108, 0.12) 0%, transparent 60%),
+        radial-gradient(circle at 100% 100%, rgba(200, 167, 108, 0.06) 0%, transparent 40%);
+      border-radius: 46px;
+      box-shadow: 
+        0 0 0 10px #2A2126,
+        0 0 0 12px #3E3238,
+        0 35px 85px var(--color-bezel-shadow),
+        0 10px 25px rgba(0, 0, 0, 0.5);
+      position: relative;
+      overflow: hidden;
+      transition: max-width 0.5s cubic-bezier(0.16, 1, 0.3, 1), background-color 0.4s ease, box-shadow 0.4s ease;
+    }
+
+    body.is-expanded .smartphone-bezel {
+      max-width: 580px;
+      border-radius: 24px;
+      box-shadow: 0 25px 70px rgba(0, 0, 0, 0.6);
+    }
+
+    @media (max-width: 500px) {
+      .viewport-stage {
+        padding: 0;
+        background: var(--color-bg-paper);
+      }
+      .smartphone-bezel {
+        max-width: 100%;
+        border-radius: 0;
+        box-shadow: none;
+      }
+    }
+
+    /* Ambient Dynamic Floating Gold Particles */
+    .ambient-particles-canvas {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 50;
+      opacity: 0.65;
+    }
+
+    /* Sections Common */
+    .invitation-section {
+      position: relative;
+      width: 100%;
+      padding: 50px 28px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    .reveal-item {
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity 1.1s cubic-bezier(0.16, 1, 0.3, 1), transform 1.1s cubic-bezier(0.16, 1, 0.3, 1);
+      will-change: opacity, transform;
+    }
+
+    .reveal-item.is-revealed {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .delay-1 { transition-delay: 0.15s; }
+    .delay-2 { transition-delay: 0.30s; }
+    .delay-3 { transition-delay: 0.45s; }
+    .delay-4 { transition-delay: 0.60s; }
+    .delay-5 { transition-delay: 0.75s; }
+    .delay-6 { transition-delay: 0.90s; }
+
+    .ornamental-line {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 14px;
+      width: 100%;
+      max-width: 240px;
+      margin: 18px 0;
+    }
+
+    .ornamental-line::before,
+    .ornamental-line::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, var(--color-metallic-gold), transparent);
+    }
+
+    .ornamental-diamond {
+      width: 5px;
+      height: 5px;
+      background-color: var(--color-metallic-gold);
+      transform: rotate(45deg);
+    }
+
+    /* Personalized Guest Greeting Badge */
+    .personalized-guest-badge {
+      display: none;
+      background: rgba(200, 167, 108, 0.12);
+      border: 1px solid var(--color-subtle-border);
+      color: var(--color-rose-deep);
+      padding: 6px 16px;
+      border-radius: 999px;
+      font-family: var(--font-sans-clean);
+      font-size: 11px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      font-weight: 600;
+      margin-top: 18px;
+      margin-bottom: 6px;
+      animation: fadeIn 0.8s ease forwards;
+    }
+
+    .personalized-guest-badge.is-visible {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    /* PAGE 1: HERO */
+    #hero-section {
+      min-height: 840px;
+      padding-top: 0;
+      padding-bottom: 70px;
+      justify-content: flex-start;
+    }
+
+    .hero-floral-wrapper {
+      width: 100%;
+      margin: 0 -28px;
+      position: relative;
+      overflow: hidden;
+      opacity: 0;
+      transform: translateY(-24px);
+      transition: opacity 1.6s ease-out, transform 1.6s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .hero-floral-wrapper.is-revealed {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .hero-floral-img {
+      width: 100%;
+      height: auto;
+      display: block;
+      transform: scale(1.04);
+      transition: transform 6s ease-out;
+    }
+
+    .hero-floral-wrapper.is-revealed .hero-floral-img {
+      transform: scale(1);
+    }
+
+    .names-block {
+      margin-top: 18px;
+      margin-bottom: 18px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+
+    .name-structured {
+      font-family: var(--font-serif-fashion);
+      font-size: clamp(38px, 9vw, 48px);
+      font-weight: 500;
+      letter-spacing: 5px;
+      color: var(--color-deep-accent);
+      text-transform: uppercase;
+      line-height: 1.1;
+    }
+
+    .ampersand-cursive {
+      font-family: var(--font-script-calligraphy);
+      font-size: clamp(34px, 8.5vw, 44px);
+      color: var(--color-romantic-accent);
+      margin: -6px 0 -4px;
+      transform: rotate(-3deg);
+      display: inline-block;
+    }
+
+    .hero-supporting-copy {
+      font-family: var(--font-serif-editorial);
+      font-size: 17px;
+      font-style: italic;
+      color: var(--color-muted-text);
+      letter-spacing: 0.5px;
+      max-width: 290px;
+      line-height: 1.5;
+      margin-top: 8px;
+    }
+
+    .wedding-rings-box {
+      margin-top: 26px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .rings-svg {
+      width: 48px;
+      height: 32px;
+      stroke: var(--color-metallic-gold);
+      fill: none;
+      stroke-width: 1.4;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      filter: drop-shadow(0 2px 4px rgba(200, 167, 108, 0.25));
+    }
+
+    .scroll-cue {
+      margin-top: 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+      opacity: 0.7;
+    }
+
+    .scroll-cue span {
+      font-family: var(--font-sans-clean);
+      font-size: 10px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--color-metallic-gold);
+    }
+
+    .scroll-arrow-line {
+      width: 1px;
+      height: 28px;
+      background: linear-gradient(180deg, var(--color-metallic-gold), transparent);
+      animation: pulseLine 2s infinite ease-in-out;
+    }
+
+    @keyframes pulseLine {
+      0%, 100% { transform: scaleY(0.4); opacity: 0.3; }
+      50% { transform: scaleY(1); opacity: 1; }
+    }
+
+    /* PAGE 2: DATE REVEAL */
+    #date-section {
+      min-height: 780px;
+      padding-top: 60px;
+      padding-bottom: 0;
+      justify-content: space-between;
+    }
+
+    .date-content-box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+
+    .date-header-pretitle {
+      font-family: var(--font-sans-clean);
+      font-size: 11px;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      color: var(--color-muted-text);
+      font-weight: 500;
+      margin-bottom: 8px;
+    }
+
+    .date-month-title {
+      font-family: var(--font-serif-fashion);
+      font-size: 30px;
+      font-weight: 400;
+      letter-spacing: 6px;
+      text-transform: uppercase;
+      color: var(--color-rose-deep);
+    }
+
+    .giant-date-number {
+      font-family: var(--font-serif-fashion);
+      font-size: clamp(100px, 28vw, 136px);
+      font-weight: 400;
+      line-height: 0.9;
+      color: var(--color-deep-accent);
+      letter-spacing: -2px;
+      margin: 12px 0 16px;
+      transform: scale(0.9);
+      transition: transform 1.3s cubic-bezier(0.16, 1, 0.3, 1), opacity 1.3s ease;
+    }
+
+    .giant-date-number.is-revealed {
+      transform: scale(1);
+    }
+
+    .date-meta-details {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 6px;
+      margin-top: 10px;
+    }
+
+    .date-time-line {
+      font-family: var(--font-serif-editorial);
+      font-size: 20px;
+      font-style: italic;
+      color: var(--color-primary-text);
+    }
+
+    .date-venue-line {
+      font-family: var(--font-display-classic);
+      font-size: 15px;
+      letter-spacing: 2px;
+      color: var(--color-metallic-gold);
+      font-weight: 500;
+      margin-top: 4px;
+    }
+
+    .date-location-line {
+      font-family: var(--font-sans-clean);
+      font-size: 12px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--color-muted-text);
+    }
+
+    .date-bottom-florals {
+      width: 100%;
+      margin: 40px -28px 0;
+      position: relative;
+      transform: translateY(30px);
+      transition: transform 1.4s cubic-bezier(0.16, 1, 0.3, 1), opacity 1.4s ease;
+    }
+
+    .date-bottom-florals.is-revealed {
+      transform: translateY(0);
+    }
+
+    .date-bottom-florals img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    /* PAGE 3: COUNTDOWN */
+    #countdown-section {
+      min-height: 820px;
+      padding: 60px 24px 70px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .countdown-headline {
+      font-family: var(--font-display-classic);
+      font-size: 12px;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      color: var(--color-muted-text);
+      margin-bottom: 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      line-height: 1.4;
+    }
+
+    .countdown-headline-sub {
+      font-family: var(--font-serif-fashion);
+      font-size: 26px;
+      letter-spacing: 1.5px;
+      color: var(--color-deep-accent);
+      text-transform: uppercase;
+      font-weight: 500;
+    }
+
+    .countdown-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+      width: 100%;
+      max-width: 360px;
+      margin-bottom: 40px;
+    }
+
+    .countdown-card {
+      background: var(--color-card-surface);
+      border: 1px solid var(--color-subtle-border);
+      border-radius: 14px;
+      padding: 16px 6px 12px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+      position: relative;
+    }
+
+    .digit-val {
+      font-family: var(--font-serif-fashion);
+      font-size: clamp(28px, 6.5vw, 36px);
+      font-weight: 500;
+      color: var(--color-rose-deep);
+      line-height: 1;
+      margin-bottom: 6px;
+    }
+
+    .digit-lbl {
+      font-family: var(--font-sans-clean);
+      font-size: 9px;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: var(--color-muted-text);
+      font-weight: 500;
+    }
+
+    .venue-photo-wrapper {
+      width: 100%;
+      border-radius: 20px;
+      overflow: hidden;
+      position: relative;
+      box-shadow: var(--shadow-card);
+      aspect-ratio: 16 / 10;
+    }
+
+    .venue-photo-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transform: scale(1.08);
+      transition: transform 3.5s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .venue-photo-wrapper.is-revealed .venue-photo-img {
+      transform: scale(1);
+    }
+
+    .overlap-script-caption {
+      position: absolute;
+      bottom: -16px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100%;
+      font-family: var(--font-script-calligraphy);
+      font-size: clamp(34px, 8.5vw, 44px);
+      color: #FFFDF8;
+      text-shadow: 0 4px 18px rgba(0, 0, 0, 0.7);
+      pointer-events: none;
+      z-index: 10;
+    }
+
+    /* PAGE 4: DETAILS */
+    #details-section {
+      padding: 60px 24px 70px;
+    }
+
+    .reception-visual-frame {
+      width: 100%;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: var(--shadow-card);
+      margin-bottom: 32px;
+      aspect-ratio: 16 / 10;
+    }
+
+    .reception-visual-frame img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .details-hero-title {
+      font-family: var(--font-script-calligraphy);
+      font-size: clamp(48px, 12vw, 62px);
+      color: var(--color-rose-deep);
+      margin-bottom: 24px;
+      line-height: 1;
+    }
+
+    .details-item-card {
+      width: 100%;
+      background: var(--color-card-surface);
+      border: 1px solid var(--color-subtle-border);
+      border-radius: 18px;
+      padding: 24px 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .details-item-card:hover {
+      transform: translateY(-3px);
+    }
+
+    .detail-tag {
+      font-family: var(--font-display-classic);
+      font-size: 13px;
+      letter-spacing: 2px;
+      color: var(--color-deep-accent);
+      font-weight: 600;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+      display: inline-block;
+    }
+
+    .detail-heading {
+      font-family: var(--font-serif-fashion);
+      font-size: 18px;
+      font-weight: 500;
+      color: var(--color-metallic-gold);
+      margin-bottom: 10px;
+    }
+
+    .detail-desc {
+      font-family: var(--font-serif-editorial);
+      font-size: 15px;
+      line-height: 1.6;
+      color: var(--color-primary-text);
+    }
+
+    /* PAGE 5 & 6: RSVP */
+    #rsvp-section {
+      padding: 70px 24px;
+    }
+
+    .giant-rsvp-letters {
+      display: flex;
+      justify-content: center;
+      gap: 18px;
+      margin-bottom: 16px;
+    }
+
+    .rsvp-char {
+      font-family: var(--font-serif-fashion);
+      font-size: clamp(44px, 11vw, 56px);
+      font-weight: 400;
+      letter-spacing: 4px;
+      color: var(--color-deep-accent);
+      display: inline-block;
+      opacity: 0;
+      transform: translateY(20px);
+      transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .giant-rsvp-letters.is-revealed .rsvp-char:nth-child(1) { opacity: 1; transform: translateY(0); transition-delay: 0.1s; }
+    .giant-rsvp-letters.is-revealed .rsvp-char:nth-child(2) { opacity: 1; transform: translateY(0); transition-delay: 0.25s; }
+    .giant-rsvp-letters.is-revealed .rsvp-char:nth-child(3) { opacity: 1; transform: translateY(0); transition-delay: 0.4s; }
+    .giant-rsvp-letters.is-revealed .rsvp-char:nth-child(4) { opacity: 1; transform: translateY(0); transition-delay: 0.55s; }
+
+    .rsvp-by-date {
+      font-family: var(--font-display-classic);
+      font-size: 13px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--color-rose-deep);
+      font-weight: 600;
+      margin-bottom: 12px;
+    }
+
+    .rsvp-intro-copy {
+      font-family: var(--font-serif-editorial);
+      font-size: 16px;
+      font-style: italic;
+      color: var(--color-muted-text);
+      max-width: 320px;
+      line-height: 1.6;
+      margin-bottom: 36px;
+    }
+
+    .rsvp-form-container {
+      width: 100%;
+      background: var(--color-card-surface);
+      border: 1px solid var(--color-subtle-border);
+      border-radius: 24px;
+      padding: 30px 22px;
+      box-shadow: var(--shadow-card);
+      text-align: left;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-label {
+      display: block;
+      font-family: var(--font-sans-clean);
+      font-size: 11px;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: var(--color-deep-accent);
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+
+    .form-input, .form-select, .form-textarea {
+      width: 100%;
+      background: var(--color-input-bg);
+      border: 1px solid var(--color-subtle-border);
+      border-radius: 12px;
+      padding: 12px 14px;
+      font-family: var(--font-serif-editorial);
+      font-size: 16px;
+      color: var(--color-primary-text);
+      outline: none;
+      transition: all 0.25s ease;
+    }
+
+    .form-input:focus, .form-select:focus, .form-textarea:focus {
+      border-color: var(--color-metallic-gold);
+      box-shadow: 0 0 0 3px rgba(200, 167, 108, 0.2);
+    }
+
+    .field-hint {
+      display: block;
+      font-family: var(--font-sans-clean);
+      font-size: 10px;
+      color: var(--color-muted-text);
+      margin-top: 5px;
+      letter-spacing: 0.3px;
+    }
+
+    .attendance-radios {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+
+    .attendance-option {
+      position: relative;
+    }
+
+    .attendance-option input {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+      width: 100%;
+      height: 100%;
+      z-index: 2;
+    }
+
+    .attendance-pill {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 12px 8px;
+      border: 1px solid var(--color-subtle-border);
+      border-radius: 12px;
+      font-family: var(--font-sans-clean);
+      font-size: 11px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: var(--color-muted-text);
+      font-weight: 500;
+      text-align: center;
+      cursor: pointer;
+      transition: all 0.25s;
+    }
+
+    .attendance-option input:checked + .attendance-pill {
+      background: var(--color-deep-accent);
+      color: #FFFDF8;
+      border-color: var(--color-deep-accent);
+      font-weight: 600;
+    }
+
+    .btn-submit-rsvp {
+      width: 100%;
+      background: linear-gradient(135deg, var(--color-deep-accent), #45624E);
+      border: 1px solid var(--color-metallic-gold);
+      color: #FFFDF8;
+      padding: 15px;
+      border-radius: 999px;
+      font-family: var(--font-sans-clean);
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: all 0.3s;
+      margin-top: 10px;
+      box-shadow: 0 8px 24px rgba(50, 74, 58, 0.2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+    }
+
+    .btn-submit-rsvp:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 30px rgba(50, 74, 58, 0.3);
+      filter: brightness(1.1);
+    }
+
+    .btn-submit-rsvp:active {
+      transform: translateY(0);
+    }
+
+    .btn-submit-rsvp:disabled {
+      opacity: 0.7;
+      cursor: not-allowed;
+      transform: none;
+    }
+
+    /* Instant Confirmation Card */
+    .rsvp-success-card {
+      display: none;
+      width: 100%;
+      background: var(--color-card-surface);
+      border: 1px solid var(--color-subtle-border);
+      border-radius: 24px;
+      padding: 36px 24px;
+      box-shadow: var(--shadow-card);
+      text-align: center;
+      animation: fadeIn 0.5s ease forwards;
+    }
+
+    .rsvp-success-card.is-active {
+      display: block;
+    }
+
+    .success-check-icon {
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      background: rgba(200, 167, 108, 0.2);
+      border: 1px solid var(--color-metallic-gold);
+      color: var(--color-deep-accent);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      margin: 0 auto 16px;
+    }
+
+    .action-links-row {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      margin-top: 20px;
+      flex-wrap: wrap;
+    }
+
+    .calendar-btn {
+      background: var(--color-deep-accent);
+      color: var(--color-metallic-light);
+      border: 1px solid var(--color-metallic-gold);
+      padding: 10px 20px;
+      border-radius: 999px;
+      font-size: 11px;
+      font-family: var(--font-sans-clean);
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.25s;
+    }
+
+    .calendar-btn:hover {
+      color: #FFF;
+      transform: translateY(-2px);
+    }
+
+    /* PAGE 7: LOCATION */
+    #location-section {
+      padding: 60px 24px 70px;
+    }
+
+    .location-subtitle {
+      font-family: var(--font-sans-clean);
+      font-size: 11px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--color-muted-text);
+      margin-bottom: 8px;
+    }
+
+    .location-name-title {
+      font-family: var(--font-serif-fashion);
+      font-size: 28px;
+      color: var(--color-deep-accent);
+      font-weight: 500;
+      margin-bottom: 6px;
+    }
+
+    .location-address-text {
+      font-family: var(--font-serif-editorial);
+      font-size: 17px;
+      font-style: italic;
+      color: var(--color-primary-text);
+      max-width: 300px;
+      margin-bottom: 24px;
+    }
+
+    .map-frame-box {
+      width: 100%;
+      height: 260px;
+      border-radius: 20px;
+      overflow: hidden;
+      border: 1px solid var(--color-subtle-border);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+      margin-bottom: 22px;
+      position: relative;
+    }
+
+    .map-frame-box iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+      filter: saturate(0.85) contrast(1.05);
+    }
+
+    .btn-directions {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: var(--color-bg-paper);
+      border: 1px solid var(--color-metallic-gold);
+      color: var(--color-deep-accent);
+      padding: 13px 28px;
+      border-radius: 999px;
+      font-family: var(--font-sans-clean);
+      font-size: 11px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.3s;
+      box-shadow: 0 4px 15px rgba(200, 167, 108, 0.2);
+    }
+
+    .btn-directions:hover {
+      background: var(--color-deep-accent);
+      color: #FFFDF8;
+      border-color: var(--color-deep-accent);
+      transform: translateY(-2px);
+    }
+
+    /* PAGE 8: CLOSING */
+    #closing-section {
+      min-height: 720px;
+      padding: 60px 24px 80px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .closing-photo-container {
+      width: 100%;
+      border-radius: 24px;
+      overflow: hidden;
+      position: relative;
+      box-shadow: var(--shadow-elevated);
+      aspect-ratio: 16 / 11;
+      margin-bottom: 34px;
+    }
+
+    .closing-photo-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transform: scale(1.07);
+      transition: transform 4s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .closing-photo-container.is-revealed .closing-photo-img {
+      transform: scale(1);
+    }
+
+    .closing-script-msg {
+      font-family: var(--font-script-calligraphy);
+      font-size: clamp(34px, 8.5vw, 44px);
+      color: var(--color-rose-deep);
+      line-height: 1.25;
+      margin-bottom: 12px;
+    }
+
+    .closing-sub-msg {
+      font-family: var(--font-serif-editorial);
+      font-size: 16px;
+      font-style: italic;
+      color: var(--color-muted-text);
+      max-width: 310px;
+      line-height: 1.6;
+      margin-bottom: 28px;
+    }
+
+    .heart-line-svg {
+      width: 160px;
+      height: 38px;
+      stroke: var(--color-metallic-gold);
+      fill: none;
+      stroke-width: 1.5;
+      stroke-dasharray: 260;
+      stroke-dashoffset: 260;
+      transition: stroke-dashoffset 2s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .heart-line-svg.is-revealed {
+      stroke-dashoffset: 0;
+    }
+
+    .closing-signature-couple {
+      font-family: var(--font-serif-fashion);
+      font-size: 18px;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      color: var(--color-deep-accent);
+      margin-top: 18px;
+      font-weight: 500;
+    }
+
+    .footer-admin-link {
+      margin-top: 36px;
+      font-family: var(--font-sans-clean);
+      font-size: 10px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--color-muted-text);
+      text-decoration: none;
+      opacity: 0.6;
+      transition: opacity 0.25s;
+    }
+
+    .footer-admin-link:hover {
+      opacity: 1;
+      color: var(--color-metallic-gold);
+    }
+
+    /* Audio Equalizer */
+    .audio-waves {
+      display: flex;
+      align-items: center;
+      gap: 2px;
+      height: 12px;
+    }
+
+    .wave-bar {
+      width: 2px;
+      height: 100%;
+      background-color: var(--color-metallic-gold);
+      border-radius: 2px;
+      animation: waveDance 1.2s infinite ease-in-out;
+    }
+
+    .wave-bar:nth-child(2) { animation-delay: 0.2s; height: 60%; }
+    .wave-bar:nth-child(3) { animation-delay: 0.4s; height: 80%; }
+
+    @keyframes waveDance {
+      0%, 100% { transform: scaleY(0.4); }
+      50% { transform: scaleY(1); }
+    }
+
+    .wave-paused .wave-bar {
+      animation: none;
+      transform: scaleY(0.3);
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-6px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body data-theme="emerald">
+
+  <!-- Floating Top Controls Bar (Cleaned of public admin links) -->
+  <div class="floating-top-bar">
+    
+    <!-- Theme Switcher Dropdown (Clickable) -->
+    <div class="theme-picker-container">
+      <button class="pill-btn" onclick="toggleThemeMenu(event)" id="themePickerBtn" title="Choose Design Theme Collection">
+        <span>🎨</span>
+        <span id="currentThemeLabel">Emerald & Olive</span>
+        <span style="font-size: 8px;">▼</span>
+      </button>
+
+      <div class="theme-dropdown" id="themeDropdown">
+        <div class="theme-option-item" data-theme-key="blush" onclick="applyTheme('blush', this)">
+          <span class="theme-dot" style="background: linear-gradient(135deg, #EABEC3, #C8A76C);"></span>
+          <div>
+            <div>01 • Romantic Blush</div>
+            <div style="font-size: 9px; color: #A89B9E;">Blush, Peach & Champagne</div>
+          </div>
+        </div>
+
+        <div class="theme-option-item active" data-theme-key="emerald" onclick="applyTheme('emerald', this)">
+          <span class="theme-dot" style="background: linear-gradient(135deg, #1C3B2B, #83947B);"></span>
+          <div>
+            <div>02 • Emerald & Olive</div>
+            <div style="font-size: 9px; color: #A89B9E;">Tuscan Cypress, White Rose</div>
+          </div>
+        </div>
+
+        <div class="theme-option-item" data-theme-key="editorial" onclick="applyTheme('editorial', this)">
+          <span class="theme-dot" style="background: linear-gradient(135deg, #141213, #D6CECE);"></span>
+          <div>
+            <div>03 • Minimalist Editorial</div>
+            <div style="font-size: 9px; color: #A89B9E;">Vogue Noir & Gold Foil</div>
+          </div>
+        </div>
+
+        <div class="theme-option-item" data-theme-key="midnight" onclick="applyTheme('midnight', this)">
+          <span class="theme-dot" style="background: linear-gradient(135deg, #0F172A, #E2C07A);"></span>
+          <div>
+            <div>04 • Midnight Celestial</div>
+            <div style="font-size: 9px; color: #A89B9E;">Navy Starlight & Royal Gold</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Audio Melody Toggle -->
+    <button class="pill-btn" id="musicToggleBtn" onclick="toggleAudio()" title="Play Wedding Theme Melody">
+      <div class="audio-waves wave-paused" id="audioVisualizer">
+        <div class="wave-bar"></div>
+        <div class="wave-bar"></div>
+        <div class="wave-bar"></div>
+      </div>
+      <span id="musicBtnLabel">Music</span>
+    </button>
+    
+    <!-- Mobile/Expand View Toggle -->
+    <button class="pill-btn" onclick="toggleFrameView()" title="Toggle Presentation View">
+      <span id="viewModeLabel">Expand</span>
+    </button>
+  </div>
+
+  <!-- Ambient Golden Bokeh Particles -->
+  <canvas class="ambient-particles-canvas" id="particlesCanvas"></canvas>
+
+  <!-- Central Smartphone Viewport Container -->
+  <main class="viewport-stage">
+    <div class="smartphone-bezel">
+
+      <!-- PAGE 1 — HERO SECTION -->
+      <section class="invitation-section" id="hero-section">
+        <div class="hero-floral-wrapper reveal-item" id="heroFloral">
+          <img src="assets/emerald_hero_florals.jpg" alt="Botanical Wedding Arch Garland" class="hero-floral-img" id="heroFloralImg">
+        </div>
+
+        <!-- Safe Personalized Guest Link Greeting -->
+        <div class="personalized-guest-badge" id="personalizedGuestBadge">
+          <span>Joyfully Invited:</span>
+          <span id="personalizedGuestName" style="color: var(--color-deep-accent); font-weight: 700;"></span>
+        </div>
+
+        <div class="names-block">
+          <div class="name-structured reveal-item delay-1" id="heroPartner1">Amelia</div>
+          <div class="ampersand-cursive reveal-item delay-2">and</div>
+          <div class="name-structured reveal-item delay-3" id="heroPartner2">Ethan</div>
+        </div>
+
+        <div class="ornamental-line reveal-item delay-4">
+          <div class="ornamental-diamond"></div>
+        </div>
+
+        <p class="hero-supporting-copy reveal-item delay-4" id="heroSubtitle">
+          are inviting you to celebrate their joyous union
+        </p>
+
+        <div class="wedding-rings-box reveal-item delay-5">
+          <svg class="rings-svg" viewBox="0 0 48 32">
+            <ellipse cx="19" cy="16" rx="10" ry="10" />
+            <ellipse cx="29" cy="16" rx="10" ry="10" />
+            <polygon points="19,4 21,7 19,10 17,7" fill="#C8A76C" />
+          </svg>
+        </div>
+
+        <div class="scroll-cue reveal-item delay-6">
+          <span>Scroll</span>
+          <div class="scroll-arrow-line"></div>
+        </div>
+      </section>
+
+      <!-- PAGE 2 — DRAMATIC DATE REVEAL -->
+      <section class="invitation-section" id="date-section">
+        <div class="date-content-box">
+          <div class="date-header-pretitle reveal-item">Save The Date</div>
+          <div class="date-month-title reveal-item delay-1" id="dateMonth">May</div>
+          
+          <div class="giant-date-number reveal-item delay-2" id="dateNumber">27</div>
+          
+          <div class="ornamental-line reveal-item delay-3">
+            <div class="ornamental-diamond"></div>
+          </div>
+
+          <div class="date-meta-details reveal-item delay-4">
+            <div class="date-time-line" id="ceremonyTime">six o'clock in the evening</div>
+            <div class="date-venue-line" id="venueName">The Ivory Gardens</div>
+            <div class="date-location-line" id="venueCity">Florence, Italy</div>
+          </div>
+        </div>
+
+        <div class="date-bottom-florals reveal-item delay-5">
+          <img src="assets/emerald_bottom_florals.jpg" alt="Botanical Wedding Florals" id="bottomFloralImg">
+        </div>
+      </section>
+
+      <!-- PAGE 3 — LIVE COUNTDOWN TO THE MOMENT -->
+      <section class="invitation-section" id="countdown-section">
+        <div class="countdown-headline reveal-item">
+          <span>Time Left Until</span>
+          <span class="countdown-headline-sub">The Wedding</span>
+        </div>
+
+        <div class="countdown-grid reveal-item delay-1">
+          <div class="countdown-card">
+            <span class="digit-val" id="cntDays">00</span>
+            <span class="digit-lbl">Days</span>
+          </div>
+          <div class="countdown-card">
+            <span class="digit-val" id="cntHours">00</span>
+            <span class="digit-lbl">Hours</span>
+          </div>
+          <div class="countdown-card">
+            <span class="digit-val" id="cntMinutes">00</span>
+            <span class="digit-lbl">Minutes</span>
+          </div>
+          <div class="countdown-card">
+            <span class="digit-val" id="cntSeconds">00</span>
+            <span class="digit-lbl">Seconds</span>
+          </div>
+        </div>
+
+        <div class="venue-photo-wrapper reveal-item delay-2">
+          <img src="assets/venue_florence.jpg" alt="The Ivory Gardens, Florence, Italy" class="venue-photo-img" loading="lazy">
+          <div class="overlap-script-caption">Our Forever Begins</div>
+        </div>
+      </section>
+
+      <!-- PAGE 4 — WEDDING DETAILS & ITINERARY -->
+      <section class="invitation-section" id="details-section">
+        <div class="reception-visual-frame reveal-item">
+          <img src="assets/reception_dinner.jpg" alt="Candlelit Italian Wedding Reception Dinner" loading="lazy">
+        </div>
+
+        <h2 class="details-hero-title reveal-item delay-1">Details</h2>
+
+        <div class="details-item-card reveal-item delay-2">
+          <div class="detail-tag">01 • Celebration</div>
+          <div class="detail-heading">Reception & Dinner</div>
+          <p class="detail-desc">
+            Cocktails on the olive terrace begin at 6:30 PM, followed by candlelit Tuscan dinner, toasts, and dancing under the stars.
+          </p>
+        </div>
+
+        <div class="details-item-card reveal-item delay-3">
+          <div class="detail-tag">02 • Stay & Rest</div>
+          <div class="detail-heading">Accommodation</div>
+          <p class="detail-desc">
+            A luxury suite block has been curated at Villa Cora and Hotel Lungarno. Mention "Amelia & Ethan" for our guest rate.
+          </p>
+        </div>
+
+        <div class="details-item-card reveal-item delay-4">
+          <div class="detail-tag">03 • Guest Notes</div>
+          <div class="detail-heading">Dress Code & Travel</div>
+          <p class="detail-desc">
+            Black-Tie Optional / Italian Summer Elegance. Complimentary shuttles depart from Piazza della Signoria starting at 5:00 PM.
+          </p>
+        </div>
+      </section>
+
+      <!-- PAGE 5 & 6 — DRAMATIC RSVP CALL-OUT & FORM -->
+      <section class="invitation-section" id="rsvp-section">
+        
+        <div class="giant-rsvp-letters reveal-item" id="rsvpLetterBlock">
+          <span class="rsvp-char">R</span>
+          <span class="rsvp-char">S</span>
+          <span class="rsvp-char">V</span>
+          <span class="rsvp-char">P</span>
+        </div>
+
+        <div class="rsvp-by-date reveal-item delay-1" id="rsvpDeadlineText">Kindly Respond by April 15</div>
+        <p class="rsvp-intro-copy reveal-item delay-2" id="rsvpIntroCopy">
+          We would be honored by your presence. Please confirm your attendance and meal preferences below.
+        </p>
+
+        <!-- RSVP Form Box -->
+        <div class="rsvp-form-container reveal-item delay-3" id="rsvpFormCard">
+          <form id="weddingRsvpForm" onsubmit="handleRsvpSubmit(event)">
+            
+            <div class="form-group">
+              <label class="form-label" for="guestName">Your Full Name(s) *</label>
+              <input type="text" id="guestName" class="form-input" placeholder="e.g., Lady Eleanor Vance" required minlength="2">
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Will You Attend? *</label>
+              <div class="attendance-radios">
+                <label class="attendance-option">
+                  <input type="radio" name="attending" value="yes" checked onchange="toggleGuestFields(true)">
+                  <span class="attendance-pill">Joyfully Accept</span>
+                </label>
+                <label class="attendance-option">
+                  <input type="radio" name="attending" value="no" onchange="toggleGuestFields(false)">
+                  <span class="attendance-pill">Regretfully Decline</span>
+                </label>
+              </div>
+            </div>
+
+            <div class="form-group" id="guestsCountGroup">
+              <label class="form-label" for="guestsCount">Number of Attending Guests</label>
+              <select id="guestsCount" class="form-select">
+                <option value="1">1 Guest</option>
+                <option value="2" selected>2 Guests</option>
+                <option value="3">3 Guests</option>
+                <option value="4">4 Guests</option>
+              </select>
+            </div>
+
+            <div class="form-group" id="mealPrefGroup">
+              <label class="form-label" for="mealPref">Entrée & Dietary Preference</label>
+              <select id="mealPref" class="form-select">
+                <option value="Tuscan Beef Tenderloin & Chianti Glaze">Tuscan Beef Tenderloin & Chianti Glaze</option>
+                <option value="Pan-Seared Mediterranean Sea Bass">Pan-Seared Mediterranean Sea Bass</option>
+                <option value="Handmade Truffle Risotto (Vegetarian)">Handmade Truffle Risotto (Vegetarian)</option>
+                <option value="Vegan Summer Harvest Tasting">Vegan Summer Harvest Tasting</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="guestContact">Phone or Email (Optional)</label>
+              <input type="text" id="guestContact" class="form-input" placeholder="e.g., eleanor@vance.com or +1 (555) 234-5678">
+              <span class="field-hint">For wedding updates & schedule reminders</span>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="guestMessage">A Note for the Couple (Optional)</label>
+              <textarea id="guestMessage" class="form-textarea" rows="3" placeholder="Share your warm wishes, song requests, or dietary details..."></textarea>
+            </div>
+
+            <button type="submit" class="btn-submit-rsvp" id="btnRsvpSubmit">
+              <span>Confirm Attendance</span>
+            </button>
+          </form>
+        </div>
+
+        <!-- RSVP Confirmation Success Card -->
+        <div class="rsvp-success-card" id="rsvpSuccessCard">
+          <div class="success-check-icon">✓</div>
+          <div class="rsvp-by-date" style="font-size: 16px;">Thank You, <span id="confirmedGuestName">Guest</span></div>
+          <p class="rsvp-intro-copy" id="confirmationNote" style="margin-top: 8px; margin-bottom: 20px;">
+            Your response has been joyfully recorded. We cannot wait to celebrate together in Florence!
+          </p>
+          <div class="action-links-row">
+            <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Amelia+%26+Ethan%27s+Wedding&dates=20260527T160000Z/20260527T230000Z&details=Wedding+Celebration+in+Florence+at+The+Ivory+Gardens&location=The+Ivory+Gardens,+Via+dei+Colli+14,+Florence,+Italy" target="_blank" rel="noopener" class="calendar-btn">
+              <span>📅 Add to Google Calendar</span>
+            </a>
+            <button class="pill-btn" onclick="resetRsvpForm()" style="color: var(--color-deep-accent); border-color: var(--color-subtle-border); background: none;">
+              Update Response
+            </button>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- PAGE 7 — VENUE LOCATION & DIRECTIONS -->
+      <section class="invitation-section" id="location-section">
+        <div class="location-subtitle reveal-item">The Venue</div>
+        <div class="location-name-title reveal-item delay-1" id="locationVenueTitle">The Ivory Gardens</div>
+        <p class="location-address-text reveal-item delay-2" id="locationAddressText">
+          Via dei Colli, 14 • 50125 Firenze, Tuscany, Italy
+        </p>
+
+        <div class="map-frame-box reveal-item delay-3">
+          <iframe 
+            id="mapIframe"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46114.70775986877!2d11.226922899999999!3d43.7695604!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132a56a680d2d6ad%3A0x93d579170c58e0a3!2sFlorence%2C%20Metropolitan%20City%20of%20Florence%2C%20Italy!5e0!3m2!1sen!2sus!4v1710000000000!5m2!1sen!2sus"
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Florence Wedding Venue Map">
+          </iframe>
+        </div>
+
+        <div class="reveal-item delay-4">
+          <a href="https://maps.google.com/?q=The+Ivory+Gardens+Florence+Italy" target="_blank" rel="noopener" class="btn-directions" id="directionsLink">
+            <span>Get Directions</span>
+            <span>→</span>
+          </a>
+        </div>
+      </section>
+
+      <!-- PAGE 8 — ROMANTIC CLOSING -->
+      <section class="invitation-section" id="closing-section">
+        <div class="closing-photo-container reveal-item">
+          <img src="assets/couple_closing.jpg" alt="Amelia and Ethan at Sunset in Florence" class="closing-photo-img" loading="lazy">
+        </div>
+
+        <div class="closing-script-msg reveal-item delay-1">
+          Forever & Always
+        </div>
+
+        <p class="closing-sub-msg reveal-item delay-2" id="closingText">
+          We can’t wait to share the most magical evening of our lives with each of you.
+        </p>
+
+        <div class="reveal-item delay-3">
+          <svg class="heart-line-svg" id="heartLineSvg" viewBox="0 0 160 38">
+            <path d="M 10 19 L 60 19 C 68 12, 75 10, 80 15 C 85 10, 92 12, 100 19 L 80 34 L 60 19 L 100 19 L 150 19" />
+          </svg>
+        </div>
+
+        <div class="closing-signature-couple reveal-item delay-4" id="closingCoupleSignature">
+          Amelia & Ethan
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- JAVASCRIPT LOGIC ENGINE -->
+  <script>
+    /* 1. THEME SUITE CONFIGURATION & SWITCHER ENGINE */
+    const THEME_CONFIGS = {
+      blush: {
+        name: 'Romantic Blush',
+        hero: 'assets/hero_florals.jpg',
+        bottom: 'assets/bottom_florals.jpg',
+        dataTheme: ''
+      },
+      emerald: {
+        name: 'Emerald & Olive',
+        hero: 'assets/emerald_hero_florals.jpg',
+        bottom: 'assets/emerald_bottom_florals.jpg',
+        dataTheme: 'emerald'
+      },
+      editorial: {
+        name: 'Minimalist Editorial',
+        hero: 'assets/hero_florals.jpg',
+        bottom: 'assets/bottom_florals.jpg',
+        dataTheme: 'editorial'
+      },
+      midnight: {
+        name: 'Midnight Celestial',
+        hero: 'assets/midnight_hero_florals.jpg',
+        bottom: 'assets/midnight_bottom_florals.jpg',
+        dataTheme: 'midnight'
+      }
+    };
+
+    let activeThemeKey = 'emerald';
+
+    function toggleThemeMenu(e) {
+      if (e) e.stopPropagation();
+      const dropdown = document.getElementById('themeDropdown');
+      dropdown.classList.toggle('is-open');
+    }
+
+    function applyTheme(themeKey, optionElement) {
+      const cfg = THEME_CONFIGS[themeKey] || THEME_CONFIGS.blush;
+      activeThemeKey = themeKey;
+
+      if (cfg.dataTheme) {
+        document.body.setAttribute('data-theme', cfg.dataTheme);
+      } else {
+        document.body.removeAttribute('data-theme');
+      }
+
+      const label = document.getElementById('currentThemeLabel');
+      if (label) label.textContent = cfg.name;
+
+      const heroImg = document.getElementById('heroFloralImg');
+      if (heroImg) heroImg.src = cfg.hero;
+
+      const bottomImg = document.getElementById('bottomFloralImg');
+      if (bottomImg) bottomImg.src = cfg.bottom;
+
+      // Update active highlight in menu
+      document.querySelectorAll('.theme-option-item').forEach(item => item.classList.remove('active'));
+      if (optionElement) {
+        optionElement.classList.add('active');
+      } else {
+        const target = document.querySelector(`.theme-option-item[data-theme-key="${themeKey}"]`);
+        if (target) target.classList.add('active');
+      }
+
+      // Close dropdown
+      const dropdown = document.getElementById('themeDropdown');
+      if (dropdown) dropdown.classList.remove('is-open');
+
+      // Persist choice
+      try {
+        localStorage.setItem('wedding_preferred_theme', themeKey);
+      } catch (err) {}
+
+      // Update canvas particle colors
+      updateParticleColors(themeKey);
+    }
+
+    // Close theme menu if clicking outside
+    document.addEventListener('click', (e) => {
+      const container = document.querySelector('.theme-picker-container');
+      const dropdown = document.getElementById('themeDropdown');
+      if (dropdown && dropdown.classList.contains('is-open')) {
+        if (!container || !container.contains(e.target)) {
+          dropdown.classList.remove('is-open');
+        }
+      }
+    });
+
+    function initThemeFromUrlOrStorage() {
+      const params = new URLSearchParams(window.location.search);
+      const urlTheme = params.get('theme');
+      const savedTheme = localStorage.getItem('wedding_preferred_theme');
+      const themeToSet = urlTheme || 'emerald';
+      if (THEME_CONFIGS[themeToSet]) {
+        applyTheme(themeToSet);
+      }
+    }
+
+    /* 2. DYNAMIC CLIENT CONFIGURATION INTERPOLATION */
+    function applyClientConfig() {
+      if (!window.WEDDING_CONFIG) return;
+      const cfg = window.WEDDING_CONFIG;
+
+      if (cfg.couple) {
+        const p1 = cfg.couple.partner1 || 'Amelia';
+        const p2 = cfg.couple.partner2 || 'Ethan';
+        const h1 = document.getElementById('heroPartner1');
+        const h2 = document.getElementById('heroPartner2');
+        const sig = document.getElementById('closingCoupleSignature');
+        if (h1) h1.textContent = p1;
+        if (h2) h2.textContent = p2;
+        if (sig) sig.textContent = `${p1} & ${p2}`;
+
+        if (cfg.couple.displayMonth) document.getElementById('dateMonth').textContent = cfg.couple.displayMonth;
+        if (cfg.couple.displayDay) document.getElementById('dateNumber').textContent = cfg.couple.displayDay;
+        if (cfg.couple.ceremonyTime) document.getElementById('ceremonyTime').textContent = cfg.couple.ceremonyTime;
+        if (cfg.couple.venueName) {
+          document.getElementById('venueName').textContent = cfg.couple.venueName;
+          document.getElementById('locationVenueTitle').textContent = cfg.couple.venueName;
+        }
+        if (cfg.couple.city) document.getElementById('venueCity').textContent = cfg.couple.city;
+        if (cfg.couple.address && cfg.couple.city) {
+          document.getElementById('locationAddressText').textContent = `${cfg.couple.address} • ${cfg.couple.city}`;
+        }
+        if (cfg.couple.closingMessage) document.getElementById('closingText').textContent = cfg.couple.closingMessage;
+        if (cfg.couple.mapEmbedUrl) document.getElementById('mapIframe').src = cfg.couple.mapEmbedUrl;
+        if (cfg.couple.mapDirectionsUrl) document.getElementById('directionsLink').href = cfg.couple.mapDirectionsUrl;
+      }
+
+      if (cfg.rsvp && cfg.rsvp.deadlineText) {
+        const deadlineEl = document.getElementById('rsvpDeadlineText');
+        if (deadlineEl) deadlineEl.textContent = cfg.rsvp.deadlineText;
+      }
+    }
+
+    /* 3. INTERSECTION OBSERVER SCROLL REVEALS */
+    document.addEventListener('DOMContentLoaded', () => {
+      applyClientConfig();
+      initThemeFromUrlOrStorage();
+      initScrollObservers();
+      initCountdown();
+      initParticles();
+      loadSavedRsvp();
+      initPersonalizedUrl();
+    });
+
+    function initScrollObservers() {
+      const observerOptions = {
+        root: null,
+        rootMargin: '0px 0px -12% 0px',
+        threshold: 0.15
+      };
+
+      const revealObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-revealed');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, observerOptions);
+
+      document.querySelectorAll('.reveal-item').forEach(el => revealObserver.observe(el));
+      
+      const heroFloral = document.getElementById('heroFloral');
+      if (heroFloral) {
+        setTimeout(() => heroFloral.classList.add('is-revealed'), 200);
+      }
+    }
+
+    /* 4. LIVE COUNTDOWN TIMER */
+    function initCountdown() {
+      const dateStr = (window.WEDDING_CONFIG && window.WEDDING_CONFIG.couple && window.WEDDING_CONFIG.couple.weddingDateISO) || '2026-05-27T18:00:00+02:00';
+      const targetDate = new Date(dateStr).getTime();
+
+      function updateTimer() {
+        const now = new Date().getTime();
+        const diff = targetDate - now;
+
+        if (diff <= 0) {
+          document.getElementById('cntDays').textContent = '00';
+          document.getElementById('cntHours').textContent = '00';
+          document.getElementById('cntMinutes').textContent = '00';
+          document.getElementById('cntSeconds').textContent = '00';
+          return;
+        }
+
+        const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+        document.getElementById('cntDays').textContent = String(days).padStart(2, '0');
+        document.getElementById('cntHours').textContent = String(hours).padStart(2, '0');
+        document.getElementById('cntMinutes').textContent = String(minutes).padStart(2, '0');
+        document.getElementById('cntSeconds').textContent = String(seconds).padStart(2, '0');
+      }
+
+      updateTimer();
+      setInterval(updateTimer, 1000);
+    }
+
+    /* 5. AMBIENT PARTICLES ENGINE */
+    let particlesArray = [];
+    function initParticles() {
+      const canvas = document.getElementById('particlesCanvas');
+      const ctx = canvas.getContext('2d');
+      let width = canvas.width = window.innerWidth;
+      let height = canvas.height = window.innerHeight;
+
+      window.addEventListener('resize', () => {
+        width = canvas.width = window.innerWidth;
+        height = canvas.height = window.innerHeight;
+      });
+
+      class Particle {
+        constructor() {
+          this.reset();
+        }
+        reset() {
+          this.x = Math.random() * width;
+          this.y = Math.random() * height;
+          this.size = Math.random() * 2.5 + 0.8;
+          this.speedY = -(Math.random() * 0.4 + 0.15);
+          this.speedX = (Math.random() - 0.5) * 0.3;
+          this.opacity = Math.random() * 0.5 + 0.2;
+          this.fadeSpeed = Math.random() * 0.008 + 0.004;
+          this.assignColor(activeThemeKey);
+        }
+        assignColor(theme) {
+          if (theme === 'midnight') {
+            this.color = Math.random() > 0.4 ? 'rgba(226, 192, 122, ' : 'rgba(255, 255, 255, ';
+          } else if (theme === 'emerald') {
+            this.color = Math.random() > 0.5 ? 'rgba(200, 167, 108, ' : 'rgba(131, 148, 123, ';
+          } else if (theme === 'editorial') {
+            this.color = 'rgba(184, 155, 102, ';
+          } else {
+            this.color = 'rgba(200, 167, 108, ';
+          }
+        }
+        update() {
+          this.y += this.speedY;
+          this.x += this.speedX;
+          this.opacity -= this.fadeSpeed;
+          if (this.opacity <= 0 || this.y < -10) {
+            this.reset();
+            this.y = height + 10;
+          }
+        }
+        draw() {
+          ctx.beginPath();
+          ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+          ctx.fillStyle = this.color + this.opacity + ')';
+          ctx.shadowBlur = 6;
+          ctx.shadowColor = 'rgba(200, 167, 108, 0.4)';
+          ctx.fill();
+        }
+      }
+
+      particlesArray = [];
+      const count = window.innerWidth < 600 ? 30 : 55;
+      for (let i = 0; i < count; i++) {
+        particlesArray.push(new Particle());
+      }
+
+      function animate() {
+        ctx.clearRect(0, 0, width, height);
+        particlesArray.forEach(p => {
+          p.update();
+          p.draw();
+        });
+        requestAnimationFrame(animate);
+      }
+      animate();
+    }
+
+    function updateParticleColors(theme) {
+      if (!particlesArray) return;
+      particlesArray.forEach(p => p.assignColor(theme));
+    }
+
+    /* 6. SAFE PERSONALIZED URL PARAMETER HANDLING (PHASE 5) */
+    let personalizedGuestIdentifier = '';
+
+    function initPersonalizedUrl() {
+      const params = new URLSearchParams(window.location.search);
+      const rawGuest = params.get('guest');
+      if (rawGuest && rawGuest.trim() !== '') {
+        const sanitizedGuest = rawGuest.trim();
+        personalizedGuestIdentifier = sanitizedGuest;
+
+        // 1. Safe text pre-fill in input
+        const nameInput = document.getElementById('guestName');
+        if (nameInput) nameInput.value = sanitizedGuest;
+
+        // 2. Safe text rendering in hero badge (prevents XSS)
+        const badge = document.getElementById('personalizedGuestBadge');
+        const badgeName = document.getElementById('personalizedGuestName');
+        if (badge && badgeName) {
+          badgeName.textContent = sanitizedGuest;
+          badge.classList.add('is-visible');
+        }
+
+        // 3. Personalized greeting in RSVP copy
+        const rsvpIntro = document.getElementById('rsvpIntroCopy');
+        if (rsvpIntro) {
+          rsvpIntro.textContent = `Dear ${sanitizedGuest}, we would be honored by your presence. Please confirm your attendance below.`;
+        }
+      }
+    }
+
+    /* 7. ROBUST RSVP SUBMISSION & GOOGLE SHEETS SYNC */
+    function toggleGuestFields(isAttending) {
+      const guestGroup = document.getElementById('guestsCountGroup');
+      const mealGroup = document.getElementById('mealPrefGroup');
+      const submitBtn = document.getElementById('btnRsvpSubmit');
+      if (!isAttending) {
+        guestGroup.style.display = 'none';
+        mealGroup.style.display = 'none';
+        submitBtn.querySelector('span').textContent = 'Send Regrets';
+      } else {
+        guestGroup.style.display = 'block';
+        mealGroup.style.display = 'block';
+        submitBtn.querySelector('span').textContent = 'Confirm Attendance';
+      }
+    }
+
+    async function handleRsvpSubmit(e) {
+      e.preventDefault();
+      const submitBtn = document.getElementById('btnRsvpSubmit');
+      const submitSpan = submitBtn.querySelector('span');
+
+      // 1. Validation
+      const guestNameInput = document.getElementById('guestName');
+      const guestName = guestNameInput.value.trim();
+      if (!guestName || guestName.length < 2) {
+        alert('Please enter your full name (minimum 2 characters).');
+        guestNameInput.focus();
+        return;
+      }
+
+      const isAttending = document.querySelector('input[name="attending"]:checked').value === 'yes';
+      const count = document.getElementById('guestsCount').value;
+      const meal = document.getElementById('mealPref').value;
+      const contact = document.getElementById('guestContact') ? document.getElementById('guestContact').value.trim() : '';
+      const message = document.getElementById('guestMessage').value.trim();
+
+      // 2. Duplicate Detection: Check if already submitted under this name
+      const existingRsvpKey = 'wedding_rsvp_' + guestName.toLowerCase();
+      const existingRecord = localStorage.getItem(existingRsvpKey);
+      if (existingRecord) {
+        const confirmUpdate = confirm(`We already received an RSVP under "${guestName}". Would you like to update your existing response?`);
+        if (!confirmUpdate) {
+          return;
+        }
+      }
+
+      // 3. UI Busy State (prevents rapid double-tap spam)
+      submitBtn.disabled = true;
+      submitSpan.textContent = 'Saving Your RSVP...';
+
+      const rsvpData = {
+        name: guestName,
+        attending: isAttending,
+        guests: isAttending ? parseInt(count, 10) : 0,
+        meal: isAttending ? meal : 'N/A',
+        contact: contact,
+        message: message,
+        themeUsed: activeThemeKey,
+        guestId: personalizedGuestIdentifier || '',
+        submittedAt: new Date().toISOString()
+      };
+
+      // 4. Local Resilience Storage
+      localStorage.setItem('wedding_rsvp_response', JSON.stringify(rsvpData));
+      localStorage.setItem(existingRsvpKey, JSON.stringify(rsvpData));
+      
+      let allRsvps = [];
+      try {
+        allRsvps = JSON.parse(localStorage.getItem('wedding_all_rsvps') || '[]');
+      } catch (err) { allRsvps = []; }
+      
+      const existingIdx = allRsvps.findIndex(r => r.name.toLowerCase() === guestName.toLowerCase());
+      if (existingIdx >= 0) {
+        allRsvps[existingIdx] = rsvpData;
+      } else {
+        allRsvps.push(rsvpData);
+      }
+      localStorage.setItem('wedding_all_rsvps', JSON.stringify(allRsvps));
+
+      // 5. Google Sheets Remote Transmission
+      const webhookUrl = (window.WEDDING_CONFIG && window.WEDDING_CONFIG.rsvp && window.WEDDING_CONFIG.rsvp.googleSheetWebhookUrl) || "";
+      if (webhookUrl && webhookUrl.trim() !== "") {
+        try {
+          await fetch(webhookUrl, {
+            method: 'POST',
+            mode: 'no-cors',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(rsvpData)
+          });
+        } catch (fetchErr) {
+          console.warn('Google Sheet transmission notice:', fetchErr);
+        }
+      }
+
+      // 6. Polished Success State
+      document.getElementById('confirmedGuestName').textContent = guestName;
+      const note = document.getElementById('confirmationNote');
+      if (isAttending) {
+        note.textContent = `Your attendance for ${count} guest(s) has been joyfully reserved with entrée selection. We look forward to celebrating together in Florence!`;
+      } else {
+        note.textContent = `Thank you for letting us know, ${guestName}. You will be warmly celebrated in our hearts on our special day.`;
+      }
+
+      document.getElementById('rsvpFormCard').style.display = 'none';
+      document.getElementById('rsvpSuccessCard').classList.add('is-active');
+      submitBtn.disabled = false;
+      submitSpan.textContent = 'Confirm Attendance';
+    }
+
+    function resetRsvpForm() {
+      document.getElementById('rsvpSuccessCard').classList.remove('is-active');
+      document.getElementById('rsvpFormCard').style.display = 'block';
+    }
+
+    function loadSavedRsvp() {
+      const saved = localStorage.getItem('wedding_rsvp_response');
+      if (saved) {
+        try {
+          const data = JSON.parse(saved);
+          document.getElementById('confirmedGuestName').textContent = data.name;
+          document.getElementById('rsvpFormCard').style.display = 'none';
+          document.getElementById('rsvpSuccessCard').classList.add('is-active');
+        } catch (err) {}
+      }
+    }
+
+    /* 8. AUDIO MELODY */
+    let audioCtx = null;
+    let isMusicPlaying = false;
+    let melodyTimer = null;
+
+    function toggleAudio() {
+      const visualizer = document.getElementById('audioVisualizer');
+      const label = document.getElementById('musicBtnLabel');
+
+      if (!isMusicPlaying) {
+        startWeddingMelody();
+        isMusicPlaying = true;
+        visualizer.classList.remove('wave-paused');
+        label.textContent = 'Mute';
+      } else {
+        stopWeddingMelody();
+        isMusicPlaying = false;
+        visualizer.classList.add('wave-paused');
+        label.textContent = 'Music';
+      }
+    }
+
+    function startWeddingMelody() {
+      if (!audioCtx) {
+        audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+      }
+      if (audioCtx.state === 'suspended') {
+        audioCtx.resume();
+      }
+
+      const notes = [261.63, 329.63, 392.00, 523.25, 440.00, 392.00, 329.63, 293.66, 349.23, 440.00, 523.25, 493.88];
+      let step = 0;
+
+      function playNote() {
+        if (!isMusicPlaying) return;
+        const osc = audioCtx.createOscillator();
+        const gain = audioCtx.createGain();
+
+        osc.type = 'sine';
+        osc.frequency.setValueAtTime(notes[step % notes.length], audioCtx.currentTime);
+
+        gain.gain.setValueAtTime(0.001, audioCtx.currentTime);
+        gain.gain.exponentialRampToValueAtTime(0.08, audioCtx.currentTime + 0.08);
+        gain.gain.exponentialRampToValueAtTime(0.0001, audioCtx.currentTime + 1.8);
+
+        osc.connect(gain);
+        gain.connect(audioCtx.destination);
+
+        osc.start();
+        osc.stop(audioCtx.currentTime + 1.8);
+
+        step++;
+        melodyTimer = setTimeout(playNote, 600);
+      }
+      playNote();
+    }
+
+    function stopWeddingMelody() {
+      if (melodyTimer) clearTimeout(melodyTimer);
+    }
+
+    function toggleFrameView() {
+      document.body.classList.toggle('is-expanded');
+      const label = document.getElementById('viewModeLabel');
+      label.textContent = document.body.classList.contains('is-expanded') ? 'Mobile' : 'Expand';
+    }
+  </script>
+</body>
+</html>
